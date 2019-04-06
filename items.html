@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Organizer</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" >
+    <style>
+        @media(orientation:landscape){
+            .burger{
+                top:50px;
+            }
+            .burger.on{
+                top:150xp;
+            }
+        }
+        @media(orientation:portrait){
+            .burger{
+                right:20px;
+                top:50px;
+            }
+            .burger.on{
+                right: 20px;
+                top:250xp;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="wrapper ">
+        <nav >
+            <ul class="clearfix">
+                <li><a href="index.html" >Aktualności</a></li>
+                <li><a href="toDo.html" >Do zrobienia</a></li>
+                <li><a href="items.html" class="active">Przedmioty</a></li>
+                <li><a href="profesorss.html">Profesorowie</a></li>
+            </ul>
+            </ul>
+        </nav>
+        <div class="burger">
+            <i class="fas fa-bars on"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <section class="Lista">
+            <h1>Przedmioty na czwartym semestrze i potrzebne informacje na temat zajęć:</h1>
+            <ul>
+                <li>Systemy wbudowane
+                    <ul>
+                        <li>Sala: B402</li>
+                    </ul>
+                </li>
+                <li>System ekspertowe 
+                    <ul>
+                        <li>Sala: B201</li>
+                    </ul>
+                </li>
+                <li>Matematyka Dyskretna B110
+                    <ul>
+                        <li>Sala: B110</li>
+                        <li>Możliwe zwolnienia, ale tylko parę osób na roku</li>
+                    </ul>
+                </li>
+                <li>Sieci komputerowe i Teletransmisja danych 
+                    <ul>
+                        <li>Sala: B09</li>
+                    </ul>
+                </li>
+                <li>Języki programowania dynamicznych stron internetowych I 
+                        <ul>
+                            <li>Sala: B301c</li>
+                            <li>Projekt na koniec w postaci Programu</li>
+                        </ul>
+                </li>
+                <li>Projektowanie bazodanowych aplikacji webowych 
+                        <ul>
+                            <li>Sala: B301c</li>
+                            <li>Projekt na koniec w postaci Programu</li>
+                        </ul>
+                </li>
+            </ul>
+        </section>
+    </div>
+    </div>
+    <script src="js/burger.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

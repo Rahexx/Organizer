@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Organizer</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" >
+</head>
+<body>
+    <div class="wrapper ">
+        <nav >
+            <ul class="clearfix">
+                <li><a href="index.html" >Aktualności</a></li>
+                <li><a href="toDo.html" class="active">Do zrobienia</a></li>
+                <li><a href="items.html">Przedmioty</a></li>
+                <li><a href="profesorss.html">Profesorowie</a></li>
+            </ul>
+            </ul>
+        </nav>
+        <div class="burger">
+            <i class="fas fa-bars on"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <section class="Lista">
+            <h1>Liczba zadań:<span>0</span></h1>
+            <form class="add" action="">
+                    <input type="text" placeholder="Podaj zadanie">
+                    <button>Dodaj</button>
+            </form>
+            <ul>
+            </ul>
+        </section>
+    </div>
+    </div>
+
+    <script src="js/toDoList.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,593 @@
+/* font-family: 'Roboto', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+@media (min-width: 320px) and (orientation: portrait){
+    /* Nawigacja */
+    nav{
+        position: fixed;
+        left: 0;
+        right:0;
+        top:-200px;
+        background-color: #04424F;
+        -webkit-transition: .3s linear;
+        -o-transition: .3s linear;
+        transition: .3s linear;
+    }
+    nav ul{
+        list-style: none;
+        width: 100%;
+    }
+    nav ul li{
+        float: left;
+        width: 100%;
+    }
+    nav ul li a{
+        display: block;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 10px 20px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        color:black;
+        font-size: 20px;
+        text-transform: uppercase;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+    }
+    nav ul li a.active{ 
+        background-color: #04829C;
+        color: white;
+    }
+
+    nav.on{
+        top:0;
+    }
+
+    /* Burger */
+     .burger{
+         position: fixed;
+         top:20px;
+         right: 50px;
+         font-size: 25px;
+         -webkit-transition: .2s linear;
+         -o-transition: .2s linear;
+         transition: .2s linear;
+     }
+
+     .fas{
+         display: none;
+     }
+     .burger i.on{
+         display: block;
+     }
+
+     .burger.on{
+        top: 220px;
+        right: 50px;
+    }
+    /* main */
+main{
+    width: 100%;
+    /* min-height: calc(100vh - 50px - 59.2px); */
+    min-height:30vh;
+}
+main h1{
+    width: 100%;
+    margin:20px 0 20px 15px;
+    display: inline-block;
+    text-align: left;
+}
+div.Actual main h2{
+    width: 100%;
+    margin-left: 15px;
+    display: inline-block;
+    text-align: left;
+}
+ .Actual ul{
+     list-style: none;
+     margin-top: 15px;
+     width: 100%;
+     display: inline-block;
+     text-align: left;
+ }
+
+ .Actual ul li{
+     margin: 10px 0 10px 20px;
+     font-size: 18px;
+ }
+
+ /* Aside */
+aside{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-left: 2px solid black;
+    width: 100%;   
+    -webkit-box-sizing: border-box;   
+            box-sizing: border-box;
+    background-color: #378A9B;
+}
+.Actual aside h2{
+    width: 100%;
+    margin:10px 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.Actual aside p{
+    text-align: center;
+}
+
+/* Lista w toDo */
+
+.Lista h1, .Lista ul{
+    display: inline-block;
+    margin: 20px 0 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.Lista ul{
+    list-style: none;
+}
+
+.Lista ul li{
+    border: 2px solid #7ed6df;
+    border-radius: 25px;
+    margin: 15px;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.Lista ul li span{
+    display: inline-block;
+    width: 10vw;
+    margin-left: 10px;
+    border: 2px solid #22a6b3;
+    border-radius: 50px;
+}
+
+
+form.add{
+    margin-top: 20px;
+    text-align: center;
+    outline: none;
+}
+/* Input */
+
+form.add input{
+    padding: 5px 10px;
+    border:2px solid #7ed6df;
+    border-radius: 25px;
+}
+
+/* Button */
+form.add button{
+    margin: 10px;
+    padding: 5px 8px;
+    border: 2px solid #7ed6df;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+form.add input:focus{
+    outline: none;
+}
+/* Lista w profesorss */
+
+.Lista ul.prof li{
+    margin: 5px 0;
+}
+/* Stopka */
+
+footer{
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+}
+@media (min-width: 768px) and (orientation: portrait){
+    /* Nawigacja */
+    nav ul li a{
+        font-size: 30px;
+    }
+    nav ul li{
+        float: left;
+        width: 50%;
+    }
+    /* burger */
+    .burger{
+        top: 40px;
+        right:10q0px;
+        font-size: 45px;
+    }
+    /* Main i Aside */
+    div.Actual main ul li, div.Actual aside ul li{
+        font-size:30px;
+    }
+    div.Actual main h1{
+        font-size:44px;
+    }
+    div.Actual main h2, div.Actual aside h2{
+        font-size:36px;
+    }
+
+    .Actual aside p{
+        font-size: 30px;
+    }
+    .Lista h1{
+        font-size: 44px;
+    } 
+    .Lista ul li{
+        font-size:30px;
+    }
+    
+    /* Input */
+
+form.add input{
+    padding: 5px 10px;
+    border:2px solid #7ed6df;
+    border-radius: 25px;
+    font-size: 30px;
+}
+
+/* Button */
+form.add button{
+    margin: 10px;
+    padding: 5px 8px;
+    border: 2px solid #7ed6df;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 35px;
+}
+
+form.add input:focus{
+    outline: none;
+}
+    /* Footer */
+    footer{
+        font-size:30px;
+    }
+}
+@media (min-width: 533px) and (orientation: landscape){
+/* Nawigacja */
+nav{
+    position: fixed;
+    left: 0;
+    right:0;
+    top:-200px;
+    background-color: #04424F;
+    -webkit-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+}
+nav ul li{
+    float: left;
+    width: 50%;
+}
+nav ul li a{
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px 20px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+nav ul li a.active{ 
+    background-color: #04829C;
+    color: white;
+}
+
+nav.on{
+    top:0;
+}
+/* Burger */
+.burger{
+    position: fixed;
+    top:20px;
+    right: 50px;
+    font-size: 25px;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear;
+}
+
+.fas{
+    display: none;
+}
+.burger i.on{
+    display: block;
+}
+
+.burger.on{
+   top: 120px;
+   right: 50px;
+}
+/* main */
+main{
+width: 100%;
+min-height: calc(100vh - 50px - 59.2px);
+}
+main h1{
+width: 100%;
+margin:20px 0;
+display: inline-block;
+text-align: center;
+}
+div.Actual main h2{
+width: 100%;
+display: inline-block;
+text-align: center;
+}
+.Actual ul{
+ list-style: none;
+ margin-top: 15px;
+ width: 100%;
+ display: inline-block;
+ text-align: center;
+}
+
+.Actual ul li{
+ margin: 10px 0 10px 20px;
+ font-size: 18px;
+}
+
+/* Lista w toDO */
+.Lista ul li span{
+    display: inline-block;
+    width: 10vw;
+    margin-left: 10px;
+    border: 2px solid #22a6b3;
+    border-radius: 50px;
+}
+
+
+form.add{
+    margin-top: 20px;
+    text-align: center;
+    outline: none;
+}
+/* Input */
+
+form.add input{
+    padding: 5px 10px;
+    border:2px solid #7ed6df;
+    border-radius: 25px;
+}
+
+/* Button */
+form.add button{
+    margin: 10px;
+    padding: 5px 8px;
+    border: 2px solid #7ed6df;
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+form.add input:focus{
+    outline: none;
+}
+/* Aside */
+aside{
+padding-top: 10px;
+padding-left: 10px;
+padding-bottom: 20px;
+border-left: 2px solid black;
+width: 100%;   
+-webkit-box-sizing: border-box;   
+        box-sizing: border-box;
+background-color: #378A9B;
+}
+.Actual h2{
+width: 100%;
+margin:10px 0;
+display: inline-block;
+text-align: left;
+}
+div.Actual aside ul{
+    display: inline-block;
+    margin-top:0;
+}
+
+/* Lista w toDo */
+
+.Lista h1, .Lista ul{
+display: inline-block;
+margin: 20px 0 10px;
+width: 100%;
+text-align: center;
+}
+
+.Lista ul{
+list-style: none;
+}
+
+.Lista ul li{
+margin: 15px;
+font-size: 20px;
+}
+/* Lista w profesorss */
+
+.Lista ul.prof li{
+margin: 5px 0;
+}
+/* Stopka */
+
+footer{
+background-color: #444;
+color: white;
+text-align: center;
+padding: 20px 0;
+}   
+}
+
+@media(min-width:1024px){
+    .burger{
+        right: 75px;
+        font-size:35px;
+    }
+
+    .burger.on{
+        top:120px;
+        right:75px;
+    }
+    /* Lista w toDO */
+.Lista ul li span{
+    display: inline-block;
+    width: 5vw;
+    margin-left: 10px;
+    border: 2px solid #22a6b3;
+    border-radius: 50px;
+}
+}
+
+@media(min-width:1280px){
+.wrapper{
+    max-width: 1600px;
+}
+/* Nawigacja */
+nav{
+    position: relative;
+    top:0;
+    background-color: #04424F;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+}
+nav ul li{
+    float: left;
+    width: 25%;
+}
+nav ul li a{
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px 20px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+nav ul li a:hover{
+    background-color: #04829C;
+    color: white;
+}
+
+nav ul li a.active{ 
+    background-color: #04829C;
+    color: white;
+}
+/* burger */
+.burger{
+    display: none;
+}
+/* main */
+main{
+    width: 80%;
+    height: calc(100vh - 50px - 59.2px);
+    float: left;
+}
+main h1{
+    width: 100%;
+    margin:20px 0;
+    display: inline-block;
+    text-align: center;
+}
+div.Actual main h2{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+ .Actual ul{
+     list-style: none;
+     margin-top: 15px;
+     width: 100%;
+     display: inline-block;
+     text-align: center;
+ }
+
+ .Actual ul li{
+     margin: 10px 0 10px 20px;
+     font-size: 18px;
+ }
+ /* Aside */
+aside{
+    padding-top: 30px;
+    padding-left: 10px;
+    border-left: 2px solid black;
+    width: 20%;
+    height: calc(100vh - 50px - 59.2px);
+    float: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #378A9B;
+}
+.Actual h2{
+    width: 100%;
+    margin:10px 0;
+    display: inline-block;
+    text-align: left;
+}
+
+/* Lista w toDo */
+
+.Lista h1, .Lista ul{
+    display: inline-block;
+    margin: 20px 0 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.Lista ul{
+    list-style: none;
+}
+
+.Lista ul li{
+    margin: 15px;
+    font-size: 20px;
+}
+/* Lista w profesorss */
+
+.Lista ul.prof li{
+    margin: 5px 0;
+}
+/* Stopka */
+
+footer{
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+}

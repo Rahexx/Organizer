@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Organizer</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css" >
+</head>
+<body>
+    <div class="wrapper ">
+        <nav >
+            <ul class="clearfix">
+                <li><a href="index.html" class="active">Aktualności</a></li>
+                <li><a href="toDo.html">Do zrobienia</a></li>
+                <li><a href="items.html">Przedmioty</a></li>
+                <li><a href="profesorss.html">Profesorowie</a></li>
+            </ul>
+            </ul>
+        </nav>
+        <div class="burger">
+            <i class="fas fa-bars on"></i>
+            <i class="fas fa-times"></i>
+        </div>
+        <div class=" Actual clearfix">
+        <main >
+            <h1>Plan Zajęć</h1>
+            <h2>Poniedziałek:</h2>
+            <ul>
+                <li>Wykłady ze specek od 8</li>
+                <li>SE 11:30</li>
+            </ul>
+            <h2>Wtorek:</h2>
+            <ul>
+                <li>PBDAW 13:30</li>
+            </ul>
+            <h2>Środa:</h2>
+            <ul>
+                <li>Angielski o 11:10</li>
+                <li>Skitd 13:15</li>
+            </ul>
+            <h2>Czwartek:</h2>
+            <ul>
+                <li>Sysytemy wbudowane 8:00</li>
+                <li>Matematyka Dyskretna 10:00</li>
+            </ul>
+        </main>
+        <aside >
+            <h2>Do sesji zostało:</h2>
+        <p>
+            <span class="days"></span>
+            <span class="hours"></span>
+            <span class="minutes"></span>
+            <span class="seconds"></span>
+        </p>
+        </aside>
+    </div>
+        <footer>
+            <p>&copy; Andrzej Łuszcz</p>
+        </footer>
+    </div>
+    <script src="js/countTime.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
